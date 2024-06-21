@@ -1,3 +1,10 @@
+
+pub mod calc;
+
+use calc::calc::*;
+
+
 fn main() {
-    println!("Hello, world!");
+    menu();
+    nova_op();
 }
