@@ -3,7 +3,12 @@
 pub mod calc {
     use std::io::{self, Read};
 
-    pub fn menu() {
+    pub fn app() {
+        menu();
+        nova_op();
+    }
+
+    fn menu() {
         println!(
             "Qual a operação desejada?
         1 -> adição
@@ -98,7 +103,7 @@ pub mod calc {
         println!("Como caralhos rolou um erro???")
     }
 
-    pub fn nova_op() {
+    fn nova_op() {
         loop {
             println!(
                 "Deseja realizar uma nova operação?
@@ -111,6 +116,7 @@ pub mod calc {
             if inp == 1 {
                 menu()
             } else {
+                println!("Até breve! xD");
                 break;
             }
         }

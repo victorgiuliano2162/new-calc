@@ -5,6 +5,5 @@ use calc::calc::*;
 
 
 fn main() {
-    menu();
-    nova_op();
+    app()
 }
